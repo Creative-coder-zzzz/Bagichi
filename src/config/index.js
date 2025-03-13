@@ -148,7 +148,6 @@ export const whyUs = [
   ];
 
 
-
   export const rooms = [
     {
       id: 1,
@@ -156,6 +155,8 @@ export const whyUs = [
       title: "Couple Suite",
       description: "A cozy and romantic space designed for couples, featuring a king-size bed, private balcony, and elegant decor.",
       rating: 4.8,
+      rate: 120,
+      amenities: ["wifi", "tv", "ac"],
     },
     {
       id: 2,
@@ -163,6 +164,8 @@ export const whyUs = [
       title: "Family Room",
       description: "Spacious and comfortable, perfect for families, with multiple beds, a seating area, and a scenic view.",
       rating: 4.6,
+      rate: 150,
+      amenities: ["wifi", "tv"],
     },
     {
       id: 3,
@@ -170,50 +173,65 @@ export const whyUs = [
       title: "Luxury Suite",
       description: "A premium suite offering top-notch comfort, modern amenities, and a breathtaking view of the mountains.",
       rating: 5.0,
+      rate: 250,
+      amenities: ["wifi", "ac"],
     },
     {
-        id: 4,
-        title: "Couple Suite",
-        description: "A romantic retreat with a cozy ambiance, perfect for couples.",
-        image: "https://cdn.pixabay.com/photo/2017/08/03/15/38/architecture-2576906_1280.jpg",
-        rating: 4.8,
-      },
-      {
-        id: 5,
-        title: "Family Deluxe",
-        description: "Spacious and comfortable, ideal for a family vacation.",
-        image: "https://cdn.pixabay.com/photo/2016/11/18/17/20/living-room-1835923_1280.jpg",
-        rating: 4.6,
-      },
-      {
-        id: 6,
-        title: "Luxury King Suite",
-        description: "Experience premium comfort with a breathtaking mountain view.",
-        image: "https://cdn.pixabay.com/photo/2017/03/28/12/17/chairs-2181994_1280.jpg",
-        rating: 4.9,
-      },
-      {
-        id: 7,
-        title: "Cozy Single Room",
-        description: "Perfect for solo travelers looking for a peaceful stay.",
-        image: "https://cdn.pixabay.com/photo/2016/11/30/08/48/bedroom-1872196_1280.jpg",
-        rating: 4.5,
-      },
-      {
-        id: 8,
-        title: "Modern Twin Room",
-        description: "A stylish and modern twin-bed room for friends or colleagues.",
-        image: "https://cdn.pixabay.com/photo/2021/12/25/13/08/real-estate-6893060_1280.jpg",
-        rating: 4.7,
-      },
-      {
-        id: 9,
-        title: "Penthouse Retreat",
-        description: "An exclusive penthouse suite with luxurious amenities.",
-        image: "https://cdn.pixabay.com/photo/2016/11/22/19/11/brick-wall-1850095_1280.jpg",
-        rating: 5.0,
-      },
+      id: 4,
+      image: "https://cdn.pixabay.com/photo/2017/08/03/15/38/architecture-2576906_1280.jpg",
+      title: "Couple Suite",
+      description: "A romantic retreat with a cozy ambiance, perfect for couples.",
+      rating: 4.8,
+      rate: 130,
+      amenities: ["wifi", "tv", "ac"],
+    },
+    {
+      id: 5,
+      image: "https://cdn.pixabay.com/photo/2016/11/18/17/20/living-room-1835923_1280.jpg",
+      title: "Family Deluxe",
+      description: "Spacious and comfortable, ideal for a family vacation.",
+      rating: 4.6,
+      rate: 170,
+      amenities: ["wifi", "tv"],
+    },
+    {
+      id: 6,
+      image: "https://cdn.pixabay.com/photo/2017/03/28/12/17/chairs-2181994_1280.jpg",
+      title: "Luxury King Suite",
+      description: "Experience premium comfort with a breathtaking mountain view.",
+      rating: 4.9,
+      rate: 300,
+      amenities: ["wifi", "ac"],
+    },
+    {
+      id: 7,
+      image: "https://cdn.pixabay.com/photo/2016/11/30/08/48/bedroom-1872196_1280.jpg",
+      title: "Cozy Single Room",
+      description: "Perfect for solo travelers looking for a peaceful stay.",
+      rating: 4.5,
+      rate: 80,
+      amenities: ["wifi"],
+    },
+    {
+      id: 8,
+      image: "https://cdn.pixabay.com/photo/2021/12/25/13/08/real-estate-6893060_1280.jpg",
+      title: "Modern Twin Room",
+      description: "A stylish and modern twin-bed room for friends or colleagues.",
+      rating: 4.7,
+      rate: 140,
+      amenities: ["wifi", "tv"],
+    },
+    {
+      id: 9,
+      image: "https://cdn.pixabay.com/photo/2016/11/22/19/11/brick-wall-1850095_1280.jpg",
+      title: "Penthouse Retreat",
+      description: "An exclusive penthouse suite with luxurious amenities.",
+      rating: 5.0,
+      rate: 500,
+      amenities: ["wifi", "tv", "ac"],
+    },
   ];
+  
 
  export  const activities = [
     {

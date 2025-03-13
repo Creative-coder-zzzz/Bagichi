@@ -12,7 +12,7 @@ function Hero() {
     const navigate = useNavigate();
   return (
     <div>
-       <div className="relative w-full h-screen">
+       <div className="relative w-full h-screen max-h-[700px]">
         <Swiper
           modules={[Navigation, Autoplay]}
           onSwiper={setSwiperRef}
@@ -21,7 +21,7 @@ function Hero() {
             prevEl: ".swiper-button-prev",
           }}
           autoplay={{
-            delay: 4000, // Auto-slide every 4 seconds
+            delay: 4000, 
             disableOnInteraction: false,
           }}
           loop={true}

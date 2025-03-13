@@ -2,17 +2,25 @@ import React, { useState } from "react";
 import { navElements } from "../config";
 import { Link, useNavigate } from "react-router-dom";
 import { Phone, Menu, X } from "lucide-react";
-
+import pahuna from '../assets/images/pahuna.png'
+import { FaLocationPin } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
+import { CiPhone } from "react-icons/ci";
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
     const navigate = useNavigate();
   return (
+    <div>
+      <div className="flex justify-between text-sm p-2">
+        <p className="flex items-center gap-2"> <FaLocationPin />Gangtok,near deorali,the pahuna retreat</p>
+        <p className="flex items-center gap-2"><MdEmail/> sandeshadhikari2003@gmail.com</p>
+        <p className="flex items-center gap-2"><CiPhone /> +918927678560</p>
+      </div>
+
     <div className="bg-[#F4694C] text-gray-100 p-4">
       <div className="flex items-center justify-between">
         {/* Logo */}
-        <h1 className="font-[Montserrat] text-lg lg:text-xl whitespace-nowrap">
-          Pahuna Retreat
-        </h1>
+        <img src={pahuna} alt="" className="w-50"/>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-6 lg:gap-8 justify-center items-center">
@@ -63,6 +71,7 @@ function Nav() {
           </div>
         </div>
       )}
+    </div>
     </div>
   );
 }

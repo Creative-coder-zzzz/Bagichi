@@ -1,6 +1,7 @@
 import React from "react";
 import { rooms } from "../config";
 import StarRating from "../config/utilsFunc";
+import { FaWifi, FaTv, FaSnowflake } from "react-icons/fa"; // Example icons
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -47,11 +48,29 @@ function Rooms() {
                   className="w-full h-60 object-cover rounded-lg"
                 />
                 <h2 className="text-xl font-bold mt-4">{room.title}</h2>
-                <div className="mt-3 flex items-center gap-6">
+
+                {/* Rating Section */}
+                <div className="mt-2 flex items-center gap-6">
                   <h1>Ratings</h1>
                   <StarRating rating={room.rating} />
                 </div>
+
+                {/* Room Price */}
+                <p className="text-lg font-semibold text-green-700 mt-2">
+                  Rate: ${room.rate} / night
+                </p>
+
+                {/* Amenities Icons */}
+                <div className="flex gap-3 mt-2 text-gray-700">
+                  {room.amenities.includes("wifi") && <FaWifi size={20} />}
+                  {room.amenities.includes("tv") && <FaTv size={20} />}
+                  {room.amenities.includes("ac") && <FaSnowflake size={20} />}
+                </div>
+
+                {/* Description */}
                 <p className="text-gray-600 mt-2">{room.description}</p>
+
+                {/* Book Now Button */}
                 <button className="mt-3 p-2 bg-[#F4694C] rounded-lg text-white hover:text-black hover:bg-white hover:border-2 duration-300">
                   Book Now
                 </button>

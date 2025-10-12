@@ -10,7 +10,7 @@ function Hero() {
   const [swiperRef, setSwiperRef] = useState(null);
 
   return (
-    <div className="relative w-full h-screen md:max-h-[700px] max-h-[700px]">
+    <div className="relative w-full h-screen md:max-h-[700px] max-h-[500px]">
       <Swiper
         modules={[Navigation, Autoplay]}
         onSwiper={setSwiperRef}

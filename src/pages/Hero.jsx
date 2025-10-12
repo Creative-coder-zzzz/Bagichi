@@ -50,7 +50,9 @@ function Hero() {
 
               {slide.button && (
                 <button
-                  onClick={() => navigate("/book")}
+                  onClick={() =>
+                    window.open("https://wa.me/+918901030552", "_blank")
+                  }
                   className="mt-4 md:mt-6 px-6 py-3 md:px-8 md:py-4 bg-[#751818] text-white font-semibold rounded-md shadow-lg hover:bg-[#A42C2C] transition-all duration-300 max-w-[200px] text-center"
                 >
                   Book Now
@@ -62,11 +64,11 @@ function Hero() {
       </Swiper>
 
       {/* Navigation Buttons */}
-      <button className="swiper-button-prev absolute top-1/2 left-4 transform -translate-y-1/2 bg-black/40 p-2 rounded-full hover:bg-black/60 transition">
+      <button className="swiper-button-prev absolute top-1/2 left-4 transform -translate-y-1/2 p-2 rounded-full transition">
         <ChevronLeft size={24} className="text-white" />
       </button>
 
-      <button className="swiper-button-next absolute top-1/2 right-4 transform -translate-y-1/2 bg-black/40 p-2 rounded-full hover:bg-black/60 transition">
+      <button className="swiper-button-next absolute top-1/2 right-4 transform -translate-y-1/2  p-2 rounded-full transition">
         <ChevronRight size={24} className="text-white" />
       </button>
     </div>

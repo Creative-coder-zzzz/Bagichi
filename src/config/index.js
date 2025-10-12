@@ -165,7 +165,7 @@ export const testimonials = [
     message:
       "The best and nice place for wedding as well as for destination wedding in farrukhnagar and nearer villages. Aroma of flowers is all over the place. Eating area is very wide to accommodate many people at a time. Parking is also available. The best thing is the atmosphere and design of this place as u feel green because of the greenery inside the park.",
     image:
-      "https://cdn.pixabay.com/photo/2021/09/27/11/01/man-6660393_1280.jpg",
+      "https://lh3.googleusercontent.com/a/ACg8ocKV7YK-WHT_MIhkJMIAMy3z8VW4kySfTkmYCPKVpaFgkYMS8g=w90-h90-p-rp-mo-br100",
   },
 
   {
@@ -175,7 +175,7 @@ export const testimonials = [
     message:
       "Bagichi Faruknagar is a stunning venue with beautiful surrounding , providing impeccable service, and a serene atmosphere. Perfect place for creating unforgettable moments, making every wedding truly magical and memorable. Highly recommended. Mr Rishi Saini and their team do a great job at providing great support and cooperation and facilitate every thing very effectively",
     image:
-      "https://images.pexels.com/photos/1697912/pexels-photo-1697912.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://lh3.googleusercontent.com/a/ACg8ocKjlmcOLdnG2dEJZF5NTShTcAC3uviRyI_JzHNnrVzsLUK6Sw=w90-h90-p-rp-mo-br100",
   },
   {
     id: 5,
@@ -184,7 +184,7 @@ export const testimonials = [
     message:
       "Good place. Nice embience The decoration was good with in Nature....Ample parking space with 1500+ gathering...Lot of greenries and flowers....Decoration is superb.",
     image:
-      "https://cdn.pixabay.com/photo/2021/03/05/00/32/man-6069944_1280.jpg",
+      "https://lh3.googleusercontent.com/a/ACg8ocLCvqPwTUUXqxJ6dsLpy0R2odqWHXdgn_cjjjGB4ICS0NBATw=w90-h90-p-rp-mo-br100",
   },
 ];
 

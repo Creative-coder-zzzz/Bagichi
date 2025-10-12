@@ -5,20 +5,18 @@ import { slides } from "../config";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import "swiper/css";
 import "swiper/css/navigation";
-import { useNavigate } from "react-router-dom";
 
 function Hero() {
   const [swiperRef, setSwiperRef] = useState(null);
-  const navigate = useNavigate();
 
   return (
-    <div className="relative w-full h-screen md:max-h-[600px] max-h-[400px]">
+    <div className="relative w-full h-screen md:max-h-[700px] max-h-[700px]">
       <Swiper
         modules={[Navigation, Autoplay]}
         onSwiper={setSwiperRef}
         navigation={{
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: ".next-btn",
+          prevEl: ".prev-btn",
         }}
         autoplay={{ delay: 4000, disableOnInteraction: false }}
         loop={true}
@@ -38,7 +36,7 @@ function Hero() {
 
             {/* Text Overlay */}
             <div className="absolute inset-0 flex flex-col justify-center px-6 md:px-20 text-left space-y-4">
-              <h2 className="text-[#FFD700] text-2xl md:text-5xl font-bold drop-shadow-lg">
+              <h2 className="text-[#FFD700] text-3xl font-bold md:text-5xl  drop-shadow-lg">
                 {slide.text}
               </h2>
               <p className="text-white text-3xl md:text-6xl font-extrabold drop-shadow-lg">
@@ -63,13 +61,13 @@ function Hero() {
         ))}
       </Swiper>
 
-      {/* Navigation Buttons */}
-      <button className="swiper-button-prev absolute top-1/2 left-4 transform -translate-y-1/2 p-2 rounded-full transition">
-        <ChevronLeft size={24} className="text-white" />
+      {/* ✅ Custom Navigation Buttons */}
+      <button className="prev-btn absolute top-1/2 left-4 -translate-y-1/2 z-10 p-2 md:p-3">
+        <ChevronLeft className="text-white w-6 h-6 md:w-8 md:h-8" />
       </button>
 
-      <button className="swiper-button-next absolute top-1/2 right-4 transform -translate-y-1/2  p-2 rounded-full transition">
-        <ChevronRight size={24} className="text-white" />
+      <button className="next-btn absolute top-1/2 right-4 -translate-y-1/2 z-10 p-2 md:p-3">
+        <ChevronRight className="text-white w-6 h-6 md:w-8 md:h-8" />
       </button>
     </div>
   );

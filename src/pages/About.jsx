@@ -42,8 +42,11 @@ function About() {
             wedding unforgettable.
           </p>
 
-          <button className="mt-6 p-3 px-6 bg-[#751818] rounded-lg text-white hover:text-[#751818] hover:bg-white hover:border-2 duration-300 border-[#751818]">
-            Contact Us
+          <button
+            className="mt-6 p-3 px-6 bg-[#751818] rounded-lg text-white hover:text-[#751818] hover:bg-white hover:border-2 duration-300 border-[#751818]"
+            onClick={() => window.open("https://wa.me/+918901030552", "_blank")}
+          >
+            Book now
           </button>
         </div>
       </div>

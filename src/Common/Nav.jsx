@@ -31,10 +31,10 @@ function Nav() {
       </marquee>
 
       {/* 🔹 Main Navbar */}
-      <div className="bg-[#e14e4e] text-gray-100 p-2">
+      <div className="bg-[#c30c0c] text-gray-100 p-2">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <img src={pahuna} alt="Pahuna Logo" className="w-40 md:w-50" />
+          <img src={pahuna} alt="Pahuna Logo" className="w-38 md:w-50" />
 
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-6 lg:gap-8 justify-center items-center">

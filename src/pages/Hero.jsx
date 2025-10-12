@@ -31,18 +31,20 @@ function Hero() {
               style={{ backgroundImage: `url(${slide.image})` }}
             ></div>
 
-            {/* Gradient Overlay */}
+            {/* Gradient */}
             <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/60"></div>
 
-            {/* Text Overlay */}
-            <div className="absolute inset-0 flex flex-col justify-center px-6 md:px-20 text-left space-y-4">
-              <h2 className="text-[#FFD700] text-3xl font-bold md:text-5xl  drop-shadow-lg">
+            {/* Text Content */}
+            <div className="absolute inset-0 flex flex-col justify-center px-6 md:px-20 text-left space-y-3 md:space-y-4">
+              <h2 className="text-[#FFD700] text-2xl md:text-5xl font-semibold md:font-bold leading-snug drop-shadow-lg">
                 {slide.text}
               </h2>
-              <p className="text-white text-3xl md:text-6xl font-extrabold drop-shadow-lg">
+
+              <p className="text-white text-3xl md:text-6xl font-bold md:font-extrabold leading-tight drop-shadow-lg">
                 {slide.description}
               </p>
-              <p className="text-white/90 text-sm md:text-lg max-w-lg drop-shadow-md">
+
+              <p className="text-white/90 text-sm md:text-lg max-w-lg leading-relaxed drop-shadow-md">
                 {slide.para}
               </p>
 
@@ -51,7 +53,7 @@ function Hero() {
                   onClick={() =>
                     window.open("https://wa.me/+918901030552", "_blank")
                   }
-                  className="mt-4 md:mt-6 px-6 py-3 md:px-8 md:py-4 bg-[#751818] text-white font-semibold rounded-md shadow-lg hover:bg-[#A42C2C] transition-all duration-300 max-w-[200px] text-center"
+                  className="mt-4 md:mt-6 px-5 py-2 md:px-8 md:py-4 bg-[#751818] text-white font-medium md:font-semibold rounded-md shadow-lg hover:bg-[#A42C2C] transition-all duration-300 max-w-[180px] md:max-w-[200px] text-center"
                 >
                   Book Now
                 </button>
@@ -61,12 +63,12 @@ function Hero() {
         ))}
       </Swiper>
 
-      {/* ✅ Custom Navigation Buttons */}
-      <button className="prev-btn absolute top-1/2 left-4 -translate-y-1/2 z-10 p-2 md:p-3">
+      {/* ✅ Arrows hidden on mobile */}
+      <button className="prev-btn hidden md:flex absolute top-1/2 left-4 -translate-y-1/2 z-10 p-2 md:p-3">
         <ChevronLeft className="text-white w-6 h-6 md:w-8 md:h-8" />
       </button>
 
-      <button className="next-btn absolute top-1/2 right-4 -translate-y-1/2 z-10 p-2 md:p-3">
+      <button className="next-btn hidden md:flex absolute top-1/2 right-4 -translate-y-1/2 z-10 p-2 md:p-3">
         <ChevronRight className="text-white w-6 h-6 md:w-8 md:h-8" />
       </button>
     </div>

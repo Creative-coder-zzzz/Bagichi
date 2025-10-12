@@ -27,16 +27,16 @@ function About() {
             Bagichi Vatika
           </p>
           <p className="text-sm md:text-lg lg:text-xl mt-4 max-w-lg text-gray-800">
-            Bagichi Vatika is the premier and largest marriage garden in
+            Bagichi Vatika is the premier and largest wedding venue in
             Farrukhnagar, Gurugram. Spread across a sprawling lush green lawn,
             our venue is adorned with a wide variety of plants and natural
-            beauty, creating a perfect backdrop for your special day. We feature
-            a 6,000 sq. ft. dining hall and can accommodate over 3,000 guests,
+            beauty, creating a perfect memory for your special day. We feature a
+            6,000 sq. ft. dining hall and can accommodate over 3,000 guests,
             making us one of the best choices for grand weddings.
           </p>
           <p className="text-sm md:text-lg lg:text-xl mt-2 max-w-lg text-gray-800">
             Our venue also provides separate elegant rooms for the bride and
-            groom, sophisticated washrooms, and ample parking space to ensure a
+            groom, modern washrooms, and ample parking space to ensure a
             seamless and comfortable experience for you and your guests. At
             Bagichi Vatika, we combine luxury, space, and nature to make every
             wedding unforgettable.
@@ -44,7 +44,15 @@ function About() {
 
           <button
             className="mt-6 p-3 px-6 bg-[#751818] rounded-lg text-white hover:text-[#751818] hover:bg-white hover:border-2 duration-300 border-[#751818]"
-            onClick={() => window.open("https://wa.me/+918901030552", "_blank")}
+            onClick={() =>
+              window.open(
+                "https://wa.me/+918901030552?text=" +
+                  encodeURIComponent(
+                    "I wanted to know more about Bagichi Vatika"
+                  ),
+                "_blank"
+              )
+            }
           >
             Book now
           </button>

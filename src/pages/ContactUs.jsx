@@ -32,15 +32,21 @@ function ContactUs() {
             </h1>
 
             {/* WhatsApp Button */}
-            <a
-              href="https://wa.me/+918901030552"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={() =>
+                window.open(
+                  "https://wa.me/+918901030552?text=" +
+                    encodeURIComponent(
+                      "I wanted to know more about Bagichi Vatika"
+                    ),
+                  "_blank"
+                )
+              }
               className="flex items-center justify-center gap-3 bg-green-500 text-white py-3 rounded-lg text-lg hover:bg-green-600 transition p-5"
             >
               <FaWhatsapp size={24} />
               Contact Us on WhatsApp
-            </a>
+            </button>
           </div>
 
           {/* Contact Info */}

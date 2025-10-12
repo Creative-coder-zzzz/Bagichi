@@ -36,24 +36,30 @@ function Hero() {
 
             {/* Text Content */}
             <div className="absolute inset-0 flex flex-col justify-center px-6 md:px-20 text-left space-y-3 md:space-y-4">
-              <h2 className="text-[#FFD700] text-3xl md:text-5xl font-bold md:font-bold leading-snug drop-shadow-lg font-[Poppins]">
+              <h2 className="text-[#FFD700] text-2xl md:text-5xl font-bold md:font-bold leading-snug drop-shadow-lg font-[Poppins]">
                 {slide.text}
               </h2>
 
-              <p className="text-white text-4xl md:text-6xl font-extrabold md:font-extrabold leading-tight drop-shadow-lg font-[Poppins]">
+              <p className="text-white text-3xl md:text-6xl font-extrabold md:font-extrabold leading-tight drop-shadow-lg font-[Poppins]">
                 {slide.description}
               </p>
 
-              <p className="text-white/90 text-md md:text-lg max-w-lg font-bold leading-relaxed drop-shadow-md font-[Poppins]">
+              <p className="text-white/90 text-sm md:text-lg max-w-lg font-semibold leading-relaxed drop-shadow-md font-[Poppins]">
                 {slide.para}
               </p>
 
               {slide.button && (
                 <button
                   onClick={() =>
-                    window.open("https://wa.me/+918901030552", "_blank")
+                    window.open(
+                      "https://wa.me/+918901030552?text=" +
+                        encodeURIComponent(
+                          "I wanted to know more about Bagichi Vatika"
+                        ),
+                      "_blank"
+                    )
                   }
-                  className="mt-4 md:mt-6 px-5 py-2 md:px-8 md:py-4 bg-[#751818] text-white font-medium md:font-semibold rounded-md shadow-lg hover:bg-[#A42C2C] transition-all duration-300 max-w-[180px] md:max-w-[200px] text-center"
+                  className="mt-4 md:mt-6 px-5 py-2 md:px-8 md:py-4 bg-[#b10a0a] text-white font-medium md:font-semibold rounded-md shadow-lg hover:bg-[#A42C2C] transition-all duration-300 max-w-[180px] md:max-w-[200px] text-center"
                 >
                   Book Now
                 </button>

@@ -160,29 +160,29 @@ export const whyUs = [
 export const testimonials = [
   {
     id: 1,
-    name: "Rohit Sharma",
-    title: "Amazing Wedding Venue!",
+    name: "Sunny",
+    title: "Beautiful and green",
     message:
-      "Bagichi Vatika made our wedding unforgettable. The lush green lawns and elegant dining hall were just perfect for our big day!",
+      "The best and nice place for wedding as well as for destination wedding in farrukhnagar and nearer villages. Aroma of flowers is all over the place. Eating area is very wide to accommodate many people at a time. Parking is also available. The best thing is the atmosphere and design of this place as u feel green because of the greenery inside the park.",
     image:
       "https://cdn.pixabay.com/photo/2021/09/27/11/01/man-6660393_1280.jpg",
   },
 
   {
     id: 4,
-    name: "Meera Jain",
-    title: "संपूर्ण व्यवस्था और खूबसूरती",
+    name: "Swati Nayyar",
+    title: "Best wedding venue",
     message:
-      "Venue बहुत ही सुंदर और व्यवस्थित है। ब्राइड और ग्रूम के लिए अलग कमरे और पर्याप्त पार्किंग बहुत सुविधाजनक थे। हम सब खुश हैं!",
+      "Bagichi Faruknagar is a stunning venue with beautiful surrounding , providing impeccable service, and a serene atmosphere. Perfect place for creating unforgettable moments, making every wedding truly magical and memorable. Highly recommended. Mr Rishi Saini and their team do a great job at providing great support and cooperation and facilitate every thing very effectively",
     image:
       "https://images.pexels.com/photos/1697912/pexels-photo-1697912.jpeg?auto=compress&cs=tinysrgb&w=600",
   },
   {
     id: 5,
-    name: "Vikram Singh",
+    name: "Inderjeet Saini",
     title: "Highly Recommended",
     message:
-      "From the beautiful lawn to the modern amenities, everything at Bagichi Vatika exceeded our expectations. Truly the best marriage garden in Farrukhnagar!",
+      "Good place. Nice embience The decoration was good with in Nature....Ample parking space with 1500+ gathering...Lot of greenries and flowers....Decoration is superb.",
     image:
       "https://cdn.pixabay.com/photo/2021/03/05/00/32/man-6069944_1280.jpg",
   },

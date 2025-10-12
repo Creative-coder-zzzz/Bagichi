@@ -19,7 +19,7 @@ function Nav() {
           <p className="flex items-center  sm:gap-2 text-center">
             <FaLocationPin className="text-red-500" />
             <span className="truncate">
-              Bagichi Vatika,Farrukhnagar, 122506
+              Bagichi Vatika, Farrukhnagar, Gurugram, Haryana
             </span>
           </p>
 
@@ -31,7 +31,7 @@ function Nav() {
       </marquee>
 
       {/* 🔹 Main Navbar */}
-      <div className="bg-[#460707] text-gray-100 p-2">
+      <div className="bg-[#2f0202] text-gray-100 p-2">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <h1 className="p-2 font-extrabold text-3xl text-red-600 font-[Poppins]">
@@ -56,7 +56,13 @@ function Nav() {
             <button
               className="border-2 px-4 py-2 lg:px-6 lg:py-3 text-lg rounded-sm hover:bg-[#FFA488] hover:text-[#C0392B] duration-300 whitespace-nowrap"
               onClick={() =>
-                window.open("https://wa.me/+918901030552", "_blank")
+                window.open(
+                  "https://wa.me/+918901030552?text=" +
+                    encodeURIComponent(
+                      "I wanted to know more about Bagichi Vatika"
+                    ),
+                  "_blank"
+                )
               }
             >
               Book Now

@@ -12,38 +12,8 @@ import {
 function Footer() {
   return (
     <footer className="bg-gray-900 text-white py-10">
-      <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10">
         {/* Site Map */}
-        <div>
-          <h2 className="text-2xl font-semibold text-[#F4694C]">Site Map</h2>
-          <ul className="mt-4 space-y-2">
-            <li>
-              <a href="/" className="hover:text-[#F4694C] transition">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="/about" className="hover:text-[#F4694C] transition">
-                About Us
-              </a>
-            </li>
-            <li>
-              <a href="/rooms" className="hover:text-[#F4694C] transition">
-                Rooms
-              </a>
-            </li>
-            <li>
-              <a href="/facilities" className="hover:text-[#F4694C] transition">
-                Facilities
-              </a>
-            </li>
-            <li>
-              <a href="/contact" className="hover:text-[#F4694C] transition">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
 
         {/* Contact Info */}
         <div>

@@ -14,16 +14,16 @@ function WhyUs() {
           Why choose us?
         </h1>
         <p className="font-semibold text-center">
-          The Pahuna Retreat | Gangtok | East Sikkim
+          Bagichi Vatika | Farrukhnagar | Gurugram
         </p>
 
         <div className="w-full mt-10">
           <Swiper
-            slidesPerView={1.2} 
+            slidesPerView={1.2}
             breakpoints={{
-              640: { slidesPerView: 1.5 }, 
-              1024: { slidesPerView: 2.5 }, 
-              1280: { slidesPerView: 3 }, 
+              640: { slidesPerView: 1.5 },
+              1024: { slidesPerView: 2.5 },
+              1280: { slidesPerView: 3 },
             }}
             loop={true}
             spaceBetween={20}
@@ -32,7 +32,7 @@ function WhyUs() {
             pagination={{ clickable: true }}
             modules={[Navigation, Pagination, Autoplay]}
             autoplay={{ delay: 3000, disableOnInteraction: false }}
-            className="w-full max-w-none" 
+            className="w-full max-w-none"
           >
             {whyUs.map((item, index) => (
               <SwiperSlide key={index} className="flex justify-center">
@@ -47,7 +47,9 @@ function WhyUs() {
             ))}
           </Swiper>
         </div>
-        <p className="text-lg font-semibold mt-10 text-center">Choose The Pahuna Retreat for best hotel experience</p>
+        <p className="text-lg font-semibold mt-10 text-center">
+          Choose Bagichi Vatika for best marriage garden experience
+        </p>
       </div>
     </div>
   );

@@ -1,19 +1,22 @@
 import React from "react";
-import { Mail, Phone, MapPin, User } from "lucide-react";
+import { Phone, MapPin } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 function ContactUs() {
   return (
     <div className="w-full bg-gray-100 py-16">
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-4">
-        
         {/* Left Side - Google Map */}
         <div className="w-full">
-          <h1 className="text-4xl font-semibold text-[#F4694C] mb-6">Find Us Here</h1>
+          <h1 className="text-4xl font-semibold text-[#F4694C] mb-6">
+            Find Us Here
+          </h1>
           <div className="border rounded-lg shadow-lg overflow-hidden">
             <iframe
-              title="Google Map"
-              className="w-full h-[400px]"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14131.018394164192!2d88.61147908871816!3d27.33143378728907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e6a523cd1dfb0f%3A0xfac6a37fa6a36a47!2sGangtok%2C%20Sikkim!5e0!3m2!1sen!2sin!4v1710000000000"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.221218278194!2d76.82503927510984!3d28.442747075768988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d6b00513999bb%3A0x4330b8597d78e9f7!2sBagichi%20vatika!5e0!3m2!1sen!2sin!4v1760258782187!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style={{ border: "0" }}
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
@@ -21,69 +24,44 @@ function ContactUs() {
           </div>
         </div>
 
-        {/* Right Side - Contact Form */}
-        <div className="bg-white shadow-lg rounded-lg p-8">
-          <h1 className="text-4xl font-semibold text-[#F4694C] mb-6">Get In Touch</h1>
-          
-          <form className="space-y-4">
-            <div className="flex items-center border p-3 rounded-md">
-              <User size={20} className="text-[#F4694C] mr-3" />
-              <input
-                type="text"
-                placeholder="Your Name"
-                className="w-full outline-none bg-transparent"
-                required
-              />
-            </div>
+        {/* Right Side - WhatsApp Button & Contact Info */}
+        <div className="bg-white shadow-lg rounded-lg p-8 flex flex-col gap-8 mt-20">
+          <div>
+            <h1 className="text-4xl font-semibold text-[#F4694C] mb-6">
+              Get In Touch
+            </h1>
 
-            <div className="flex items-center border p-3 rounded-md">
-              <Mail size={20} className="text-[#F4694C] mr-3" />
-              <input
-                type="email"
-                placeholder="Your Email"
-                className="w-full outline-none bg-transparent"
-                required
-              />
-            </div>
-
-            <div className="flex items-center border p-3 rounded-md">
-              <MapPin size={20} className="text-[#F4694C] mr-3" />
-              <input
-                type="text"
-                placeholder="Your Address"
-                className="w-full outline-none bg-transparent"
-              />
-            </div>
-
-            <div className="border p-3 rounded-md">
-              <textarea
-                rows="4"
-                placeholder="Your Message"
-                className="w-full outline-none bg-transparent"
-                required
-              ></textarea>
-            </div>
-
-            <button
-              type="submit"
-              className="w-full bg-[#F4694C] text-white py-2 rounded-lg text-lg hover:bg-black transition"
+            {/* WhatsApp Button */}
+            <a
+              href="https://wa.me/+918901030552"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-3 bg-green-500 text-white py-3 rounded-lg text-lg hover:bg-green-600 transition p-5"
             >
-              Submit
-            </button>
-          </form>
+              <FaWhatsapp size={24} />
+              Contact Us on WhatsApp
+            </a>
+          </div>
 
           {/* Contact Info */}
-          <div className="mt-6">
-            <h2 className="text-2xl font-semibold text-[#F4694C]">Contact Details</h2>
+          <div>
+            <h2 className="text-2xl font-semibold text-[#F4694C]">
+              Contact Details
+            </h2>
             <p className="flex items-center mt-3 gap-2">
-              <Phone size={20} className="text-[#F4694C]" /> Manager: +91 98765 43210
+              <Phone size={20} className="text-[#F4694C]" /> Rishi saini: +91
+              9991316082
             </p>
             <p className="flex items-center mt-2 gap-2">
-              <Phone size={20} className="text-[#F4694C]" /> Hotel Reception: +91 87654 32109
+              <Phone size={20} className="text-[#F4694C]" /> Vikas saini: +91
+              8901030552
+            </p>
+            <p className="flex items-center mt-2 gap-2">
+              <Phone size={20} className="text-[#F4694C]" /> Harish saini: +91
+              8053979762
             </p>
           </div>
         </div>
-
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { navElements } from "../config";
 import { Link, useNavigate } from "react-router-dom";
 import { Phone, Menu, X } from "lucide-react";
-import pahuna from '../assets/images/pahuna.png'
+import pahuna from "../assets/images/pahuna.png";
 import { FaLocationPin } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { CiPhone } from "react-icons/ci";
@@ -13,24 +13,25 @@ function Nav() {
 
   return (
     <div>
-      {/* 🔹 Top Header - Responsive Fix */}
-      <div className="flex flex-wrap items-center justify-center md:justify-between text-xs sm:text-sm p-2 bg-gray-200 text-gray-700">
-        <p className="flex items-center gap-1 sm:gap-2 text-center">
-          <FaLocationPin className="text-red-500" />
-          <span className="truncate">Gangtok, near Deorali, The Pahuna Retreat</span>
-        </p>
-        <p className="hidden sm:flex items-center gap-2">
-          <MdEmail className="text-blue-500" />
-          sandeshadhikari2003@gmail.com
-        </p>
-        <p className="flex items-center gap-1 sm:gap-2">
-          <CiPhone className="text-green-500" />
-          <span className="whitespace-nowrap">+91 8927678560</span>
-        </p>
-      </div>
+      <marquee>
+        {/* 🔹 Top Header - Responsive Fix */}
+        <div className="flex flex-wrap items-center justify-between text-xs sm:text-sm p-1  text-gray-700">
+          <p className="flex items-center  sm:gap-2 text-center">
+            <FaLocationPin className="text-red-500" />
+            <span className="truncate">
+              Bagichi Vatika,Farrukhnagar, 122506
+            </span>
+          </p>
+
+          <p className="flex justify-between gap sm:gap-2">
+            <CiPhone className="text-green-500" />
+            <span className="whitespace-nowrap">+91 8901030552 </span>
+          </p>
+        </div>
+      </marquee>
 
       {/* 🔹 Main Navbar */}
-      <div className="bg-[#F4694C] text-gray-100 p-4">
+      <div className="bg-[#e14e4e] text-gray-100 p-2">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <img src={pahuna} alt="Pahuna Logo" className="w-40 md:w-50" />
@@ -52,13 +53,16 @@ function Nav() {
           <div className="hidden lg:flex items-center gap-6">
             <button
               className="border-2 px-4 py-2 lg:px-6 lg:py-3 text-lg rounded-sm hover:bg-[#FFA488] hover:text-[#C0392B] duration-300 whitespace-nowrap"
-              onClick={() => navigate('/book')}
+              onClick={() =>
+                window.open("https://wa.me/+918901030552", "_blank")
+              }
             >
               Book Now
             </button>
+
             <div className="flex items-center gap-3">
               <Phone size={20} />
-              <span className="text-lg whitespace-nowrap">+91 89485469</span>
+              <span className="text-lg whitespace-nowrap">+91 8901030552</span>
             </div>
           </div>
 
@@ -70,7 +74,7 @@ function Nav() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="absolute top-16 left-0 w-full bg-[#F4694C] p-4 flex flex-col items-center space-y-5 md:hidden z-10">
+          <div className="absolute top-25 left-0 w-full bg-[#F4694C] p-4 flex flex-col items-center space-y-5 md:hidden z-20">
             {navElements.map((items, index) => (
               <Link
                 key={index}
@@ -83,7 +87,7 @@ function Nav() {
             ))}
             <div className="flex items-center gap-3">
               <Phone size={18} />
-              <span className="text-sm">+91 89485469</span>
+              <span className="text-sm">+91 8901030552</span>
             </div>
           </div>
         )}

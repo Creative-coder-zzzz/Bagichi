@@ -34,7 +34,9 @@ function Nav() {
       <div className="bg-[#460707] text-gray-100 p-2">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <h1 className="p-2 font-extrabold text-3xl text-red-600">BAGICHI</h1>
+          <h1 className="p-2 font-extrabold text-3xl text-red-600 font-[Poppins]">
+            BAGICHI
+          </h1>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-6 lg:gap-8 justify-center items-center">

@@ -36,15 +36,15 @@ function Hero() {
 
             {/* Text Content */}
             <div className="absolute inset-0 flex flex-col justify-center px-6 md:px-20 text-left space-y-3 md:space-y-4">
-              <h2 className="text-[#FFD700] text-3xl md:text-5xl font-bold md:font-bold leading-snug drop-shadow-lg">
+              <h2 className="text-[#FFD700] text-3xl md:text-5xl font-bold md:font-bold leading-snug drop-shadow-lg font-[Poppins]">
                 {slide.text}
               </h2>
 
-              <p className="text-white text-4xl md:text-6xl font-extrabold md:font-extrabold leading-tight drop-shadow-lg">
+              <p className="text-white text-4xl md:text-6xl font-extrabold md:font-extrabold leading-tight drop-shadow-lg font-[Poppins]">
                 {slide.description}
               </p>
 
-              <p className="text-white/90 text-md md:text-lg max-w-lg font-bold leading-relaxed drop-shadow-md">
+              <p className="text-white/90 text-md md:text-lg max-w-lg font-bold leading-relaxed drop-shadow-md font-[Poppins]">
                 {slide.para}
               </p>
 

@@ -45,7 +45,7 @@ export const slides = [
     image: hero,
     text: "WELCOME TO",
     description: "BAGICHI VATIKA",
-    para: "where Luxury meets Tranquility",
+    para: "where Luxury meets Serenity",
     button: true,
   },
   {

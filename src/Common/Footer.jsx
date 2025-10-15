@@ -57,7 +57,7 @@ function Footer() {
 
       {/* Bottom Text */}
       <div className="mt-10 text-center text-gray-400 text-sm flex flex-col">
-        Powered {new Date().getFullYear()} &copy; All Rights Reserved.
+        {new Date().getFullYear()} &copy; 2025 All Rights Reserved.
       </div>
       <p className="text-sm text-center text-gray-400">
         Developed by Sandesh Adhikari

@@ -7,7 +7,7 @@ function About() {
   const navigate = useNavigate();
   return (
     <div>
-      <h1 className="text-3xl md:text-5xl mt-10  text-center lg:text-6xl font-bold tracking-tight font-[Montserrat]">
+      <h1 className="text-3xl md:text-5xl mt-15  text-center lg:text-6xl font-bold tracking-tight font-[Montserrat]">
         About Us
       </h1>
       {/* About Section */}
@@ -17,7 +17,7 @@ function About() {
           <img
             src={about}
             alt="Bagichi Vatika"
-            className="w-full h-auto max-w-lg md:max-w-lg rounded-lg shadow-lg"
+            className="w-full md:h-150 max-w-lg md:max-w-lg rounded-lg shadow-lg"
           />
         </div>
 
@@ -47,7 +47,7 @@ function About() {
             onClick={() =>
               window.open(
                 "https://wa.me/+918901030552?text=" +
-                  encodeURIComponent("I want to book Vatika"),
+                  encodeURIComponent("I want to book vatika"),
                 "_blank"
               )
             }

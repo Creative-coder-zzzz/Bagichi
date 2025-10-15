@@ -53,9 +53,7 @@ function Hero() {
                   onClick={() =>
                     window.open(
                       "https://wa.me/+918901030552?text=" +
-                        encodeURIComponent(
-                          "I wanted to know more about Bagichi Vatika"
-                        ),
+                        encodeURIComponent("I want to book vatika"),
                       "_blank"
                     )
                   }

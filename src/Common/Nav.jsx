@@ -25,7 +25,12 @@ function Nav() {
 
           <p className="flex justify-between gap sm:gap-2">
             <CiPhone className="text-green-500" />
-            <span className="whitespace-nowrap">+91 8901030552 </span>
+            <span className="whitespace-nowrap">
+              {" "}
+              <a href="tel:+91 8901030552" className="underline">
+                +91 8901030552
+              </a>
+            </span>
           </p>
         </div>
       </marquee>
@@ -68,7 +73,12 @@ function Nav() {
 
             <div className="flex items-center gap-3">
               <Phone size={20} />
-              <span className="text-lg whitespace-nowrap">+91 8901030552</span>
+              <span className="text-lg whitespace-nowrap">
+                {" "}
+                <a href="tel:+91 8901030552" className="underline">
+                  +91 8901030552
+                </a>
+              </span>
             </div>
           </div>
 
@@ -93,7 +103,12 @@ function Nav() {
             ))}
             <div className="flex items-center gap-3">
               <Phone size={18} />
-              <span className="text-sm">+91 8901030552</span>
+              <span className="text-sm">
+                {" "}
+                <a href="tel:+91 8901030552" className="underline">
+                  +91 8901030552
+                </a>
+              </span>
             </div>
           </div>
         )}

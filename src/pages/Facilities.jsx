@@ -44,6 +44,9 @@ function Facilities() {
         <h1 className="text-4xl md:text-5xl font-bold text-[#F4694C]">
           Our Facilities
         </h1>
+        <h1 className="text-2xl md:text-3xl font-semibold text-[#e6a99c]">
+          Where Luxury meets Serenity
+        </h1>
         <p className="text-lg text-gray-200 mt-3">
           Experience top-tier hospitality with modern amenities tailored for
           your comfort.

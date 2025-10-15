@@ -55,16 +55,34 @@ function ContactUs() {
               Contact Details
             </h2>
             <p className="flex items-center mt-3 gap-2">
-              <Phone size={20} className="text-[#F4694C]" /> Rishi saini: +91
-              9991316082
+              <Phone size={20} className="text-[#F4694C]" /> Rishi saini:{" "}
+              <a
+                href="tel:+91
+              9991316082"
+                className="underline"
+              >
+                +91 9991316082
+              </a>
             </p>
             <p className="flex items-center mt-2 gap-2">
-              <Phone size={20} className="text-[#F4694C]" /> Vikas saini: +91
-              8901030552
+              <Phone size={20} className="text-[#F4694C]" /> Vikas saini:{" "}
+              <a
+                href="tel:+91
+              8901030552"
+                className="underline"
+              >
+                +91 8901030552{" "}
+              </a>
             </p>
             <p className="flex items-center mt-2 gap-2">
-              <Phone size={20} className="text-[#F4694C]" /> Harish saini: +91
-              8053979762
+              <Phone size={20} className="text-[#F4694C]" /> Harish saini:{" "}
+              <a
+                href="tel:+91
+              8053979762"
+                className="underline"
+              >
+                +91 8053979762
+              </a>
             </p>
           </div>
         </div>

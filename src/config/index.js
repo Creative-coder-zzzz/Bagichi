@@ -52,7 +52,7 @@ export const slides = [
     id: 2,
     image: hero2,
     text: "Best Dj in the area",
-    para: "Come and enjoy an unforgettable night of music, lights, and celebration with your loved ones.",
+    para: "Come and enjoy an unforgettable night of music, lights and celebration with your loved ones.",
     description: "Dance Under the Open Sky",
   },
   {

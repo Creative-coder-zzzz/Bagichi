@@ -37,7 +37,13 @@ export default function SocialTab() {
       </a>
 
       <button
-        onClick={() => window.open("https://wa.me/+918901030552", "_blank")}
+        onClick={() =>
+          window.open(
+            "https://wa.me/+918901030552?text=" +
+              encodeURIComponent("I want to know more about Bagichi Vatika"),
+            "_blank"
+          )
+        }
         className="w-10 h-10 flex items-center justify-center bg-[#00ff00] text-white rounded-full shadow-lg hover:scale-110 transition-transform duration-300"
       >
         <FaWhatsapp size={24} />

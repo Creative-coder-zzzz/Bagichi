@@ -58,9 +58,7 @@ function Nav() {
               onClick={() =>
                 window.open(
                   "https://wa.me/+918901030552?text=" +
-                    encodeURIComponent(
-                      "I want to know more about Bagichi Vatika"
-                    ),
+                    encodeURIComponent("I want to book Vatika"),
                   "_blank"
                 )
               }

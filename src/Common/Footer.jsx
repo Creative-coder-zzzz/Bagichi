@@ -19,13 +19,17 @@ function Footer() {
         <div>
           <h2 className="text-2xl font-semibold text-[#F4694C]">Contact Us</h2>
           <div className="mt-4 space-y-3">
-            <p className="flex items-center gap-2">
+            <a href="tel:+918901030552 " className="flex items-center gap-2">
               <Phone size={20} className="text-[#F4694C]" /> +91 8901030552
-            </p>
-            <p className="flex items-center gap-2">
+            </a>
+            <a
+              href="https://maps.app.goo.gl/pZcaB922wdxkRM5u9"
+              target="blank"
+              className="flex items-center gap-2 underline"
+            >
               <MapPin size={20} className="text-[#F4694C]" /> Farrukhnagar,
               Haryana, India
-            </p>
+            </a>
           </div>
         </div>
 
@@ -57,7 +61,7 @@ function Footer() {
 
       {/* Bottom Text */}
       <div className="mt-10 text-center text-gray-400 text-sm flex flex-col">
-        {new Date().getFullYear()} &copy; 2025 All Rights Reserved.
+        {new Date().getFullYear()} &copy;All Rights Reserved.
       </div>
       <p className="text-sm text-center text-gray-400">
         Developed by Sandesh Adhikari

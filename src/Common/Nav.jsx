@@ -19,10 +19,12 @@ function Nav() {
           <p className="flex items-center  sm:gap-2 text-center">
             <p>For booking</p>
             <FaLocationPin className="text-red-500" />
-            <span className="truncate">Bagichi Vatika</span>
+            <span className="truncate">Bagichi Vatika, Farrukhnagar</span>
           </p>
 
           <p className="flex justify-between gap sm:gap-2">
+            {" "}
+            Contact :
             <CiPhone className="text-green-500" />
             <span className="whitespace-nowrap">
               {" "}

@@ -16,7 +16,7 @@ function Nav() {
     <div>
       <marquee>
         {/* 🔹 Top Header - Responsive Fix */}
-        <div className="flex flex-wrap items-center  text-xs sm:text-sm p-1  text-gray-700">
+        <div className="flex  items-center  text-xs sm:text-sm p-1  text-gray-700">
           <p className="flex items-center  sm:gap-2 text-center">
             <p>For booking</p>
             <FaLocationPin className="text-red-500" />
@@ -41,7 +41,7 @@ function Nav() {
             </span>
           </p>
 
-          <p className="flex gap sm:gap-2">
+          {/* <p className="flex gap sm:gap-2">
             {" "}
             &nbsp; &nbsp; or &nbsp;
             <BsWhatsapp className="text-green-500" />
@@ -60,7 +60,7 @@ function Nav() {
                 +91 8901030552
               </button>
             </span>
-          </p>
+          </p> */}
         </div>
       </marquee>
 

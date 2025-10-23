@@ -6,6 +6,7 @@ import pahuna from "../assets/images/pahuna.png";
 import { FaLocationPin } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { CiPhone } from "react-icons/ci";
+import { BsWhatsapp } from "react-icons/bs";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,20 +20,45 @@ function Nav() {
           <p className="flex items-center  sm:gap-2 text-center">
             <p>For booking</p>
             <FaLocationPin className="text-red-500" />
-            <span className="truncate">
-              Bagichi Vatika, Farrukhnagar &nbsp; &nbsp; &nbsp;
-            </span>
+            <a
+              href="https://maps.app.goo.gl/VrprHzpgyUbfgpyh9"
+              target="blank"
+              className="truncate underline"
+            >
+              Bagichi Vatika, Farrukhnagar
+            </a>
           </p>
 
           <p className="flex gap sm:gap-2">
             {" "}
-            Contact :
+            &nbsp; &nbsp; &nbsp; Contact :
             <CiPhone className="text-green-500" />
             <span className="whitespace-nowrap">
               {" "}
               <a href="tel:+91 8901030552" className="underline">
                 +91 8901030552
               </a>
+            </span>
+          </p>
+
+          <p className="flex gap sm:gap-2">
+            {" "}
+            &nbsp; &nbsp; or &nbsp;
+            <BsWhatsapp className="text-green-500" />
+            <span className="whitespace-nowrap">
+              {" "}
+              <button
+                className=" underline"
+                onClick={() =>
+                  window.open(
+                    "https://wa.me/+918901030552?text=" +
+                      encodeURIComponent("I want to book Vatika"),
+                    "_blank"
+                  )
+                }
+              >
+                +91 8901030552
+              </button>
             </span>
           </p>
         </div>

@@ -22,7 +22,7 @@ function Nav() {
             <span className="truncate">Bagichi Vatika, Farrukhnagar</span>
           </p>
 
-          <p className="flex justify-between gap sm:gap-2">
+          <p className="flex gap sm:gap-2">
             {" "}
             Contact :
             <CiPhone className="text-green-500" />

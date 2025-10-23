@@ -15,11 +15,13 @@ function Nav() {
     <div>
       <marquee>
         {/* 🔹 Top Header - Responsive Fix */}
-        <div className="flex flex-wrap items-center justify-between text-xs sm:text-sm p-1  text-gray-700">
+        <div className="flex flex-wrap items-center  text-xs sm:text-sm p-1  text-gray-700">
           <p className="flex items-center  sm:gap-2 text-center">
             <p>For booking</p>
             <FaLocationPin className="text-red-500" />
-            <span className="truncate">Bagichi Vatika, Farrukhnagar</span>
+            <span className="truncate">
+              Bagichi Vatika, Farrukhnagar &nbsp; &nbsp; &nbsp;
+            </span>
           </p>
 
           <p className="flex gap sm:gap-2">
